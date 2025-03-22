@@ -36,10 +36,46 @@ console.log(num1);
 let character:string = "Typescript";
 console.log(character);
 
+// `boolean`: Represents a true or false value.
+let isAvailable :boolean= true;
+
+//`array`: Represents an ordered list of elements of a specific type.
+//let numArray: type[]
+let numArray: number[]=[1,2,3,4];
+let CharArray:string[]=["a","b","g"];
+
+// `undefined`: Represents a declared variable without a value assigned.
+//let val: undefined=1; ---error
+let val:undefined=undefined;
+//val=1;--error
+
+// `null`: Represents intentional absence of a value.
+let val1:null=null;
+
+//`object`: Represents any non-primitive type (anything except `number`, `string`, `boolean`, `null`, `undefined`, `symbol`, `bigint`).
+let person: object = { name: "John", age: 30 };
+let obj:{name:string,age:number}={
+  name:"abc",
+  age:10
+};
+
+//spread operator
+let obj1={...obj};
+console.log(obj1);
+
+//replace
+obj={...obj,age:44,name:"shreya"};
+console.log(obj);
 
 
 
+// `tuple`: Represents a fixed-size, ordered collection of elements of possibly different types.
+let valArray:[number,string]=[1,'a'];
 
+ //`any`: Represents any type, disabling type checking. Used when the type is unknown or not important.
+let numVal;
+numVal=1;
+numVal='a';
 
 
 
@@ -76,25 +112,16 @@ console.log(character);
 
 
 /* 
-  3. `boolean`: Represents a true or false value.
-  Example: let isActive: boolean = true;
+  3. `boolean`
 */
 
-// let isActive: boolean = true;  // Example: boolean
+
 
 /* 
-  4. `null`: Represents intentional absence of a value.
-  Example: let empty: null = null;
-*/
-
-// let empty: null = null;  // Example: null
+  4. `null`
 
 /* 
-  5. `undefined`: Represents a declared variable without a value assigned.
-  Example: let uninitialized: undefined;
-*/
-
-// let uninitialized: undefined;  // Example: undefined
+  5. `undefined`
 
 /* 
   6. `symbol`: Represents a unique identifier.
@@ -112,18 +139,10 @@ console.log(character);
 // ==============================
 
 /* 
-  1. `object`: Represents any non-primitive type (anything except `number`, `string`, `boolean`, `null`, `undefined`, `symbol`, `bigint`).
-  Example: let person: object = { name: "John", age: 30 };
-*/
-
-// let person: object = { name: "John", age: 30 };  // Example: object
+  1. `object`
 
 /* 
-  2. `array`: Represents an ordered list of elements of a specific type.
-  Example: let numbers: number[] = [1, 2, 3, 4];
-*/
-
-// let numbers: number[] = [1, 2, 3, 4];  // Example: array
+  2. `array`
 
 /* 
   3. `function`: Represents a callable function.
@@ -133,11 +152,7 @@ console.log(character);
 // let greet: (name: string) => string = (name) => "Hello, " + name;  // Example: function
 
 /* 
-  4. `tuple`: Represents a fixed-size, ordered collection of elements of possibly different types.
-  Example: let point: [number, number] = [10, 20];
-*/
-
-// let point: [number, number] = [10, 20];  // Example: tuple
+  4. `tuple`
 
 // ==============================
 // 📚 3. Special Types
